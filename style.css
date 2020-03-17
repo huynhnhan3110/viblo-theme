@@ -158,8 +158,7 @@ a {
 	text-align: center;
 }
 /*	stable */
-#stable {
-	height: 626px;
+#stable {1`
 	padding-top: 84px;
 	display: flex;
 	justify-content: space-between;
@@ -202,6 +201,7 @@ a {
 	color: white;
 	background-color: #33d2fd;
 	border-radius: 4px;
+	text-transform: capitalize;
 }
 #stable ul li {
 	background-color: white;
@@ -234,20 +234,207 @@ a {
 }
 #stable ul li:nth-child(1) a{
 	background-image: url(images/heart.png);
+	background-repeat: no-repeat;
 }
 #stable ul li:nth-child(2) a{
 	background-image: url(images/tag.png);
-	background-position: 35px center;
+	background-position-x: 35px;
+	background-repeat: no-repeat;
 }
 #stable ul li:nth-child(3) a{
 	background-image: url(images/bag.png);
+	background-repeat: no-repeat;
 }
 #stable ul li:nth-child(4) a{
 	background-image: url(images/pencil.png);
+	background-repeat: no-repeat;
 }
 #stable ul li:hover {
 	background-color: #33d2fd;
 }
 #stable ul li:hover p {
 	display: block;
+}
+/* everything */
+#everything {
+	background: #fafafc;
+	padding-bottom: 60px;
+}
+#everything .container {
+	display: flex;
+	justify-content: space-between;
+}
+.everything__image {
+	padding-top: 60px;
+	width: 550px;
+}
+.everything__content {
+	width: 470px;
+	padding-top: 80px;
+}
+.everything__content h2 {
+	font-size: 30px;
+	line-height: 60px;
+	font-family: "WorkSans-Bold";
+	color: #233148;
+	text-transform: capitalize;
+}
+.everything__content ul {
+	margin-top: 25px;
+	margin-bottom: 36px;
+}
+.everything__content ul li {
+	display: flex;
+	align-items: center;
+}
+.everything__content ul li a{
+	margin-left: 16px;
+}
+.everything__content ul li a {
+	font-size: 15px;
+	line-height: 27px;
+	color: #233148;
+	font-family: "WorkSans-SemiBold";
+}
+.everything__content p {
+	font-family: "WorkSans-Regular";
+	font-size: 14px;
+	line-height: 27px;
+	color: #6a6d89;
+
+}
+#available {
+	background-color: #24caf2;
+	background-image: url(./images/wave.jpg);
+	padding-bottom: 93px;
+    background-position: center;
+    position: relative;
+}
+#available .container {
+	display: flex;
+	justify-content: space-between;
+}
+
+.available__content {
+	width: 474px;
+	margin-right: 96px;
+	margin-top: 262px;
+}
+.available__phone {
+	margin-left: 178px;
+	margin-top: 109px;
+}
+.available__content h2 {
+ 	font-size: 30px;
+	line-height: 60px;
+	text-transform: capitalize;
+	font-family: "WorkSans-Bold", sans-serif;
+	color: #233148;
+	margin-bottom: 20px;
+}
+.available__content p {
+	font-size: 14px;
+	line-height: 27px;
+	color: white;
+	font-family: "WorkSans-Regular";
+	margin-bottom: 32px;
+}
+.available__content ul li {
+	display: inline-block;
+	margin-right: 29px;
+}
+#available .getApp {
+    position: absolute;
+    bottom: -39px;
+    left: 50%;
+    transform: translate(-50%);
+    font-size: 20px;
+    line-height: 60px;
+    font-family: "WorkSans-Bold";
+    text-transform: uppercase;
+    background-image: linear-gradient(to top, #f6387d, #fe7570);
+    color: white;
+    padding: 9px 84px;
+    box-shadow: 0px 11px 29px rgba(255, 7, 95, 0.2);
+}
+#links {
+	display: flex;
+	justify-content: space-between;
+	padding-top: 139px;
+	max-width: 719px;
+}
+#links div h3 {
+	font-size: 15px;
+	font-family: "WorkSans-SemiBold";
+	color: #233148;
+	line-height: 27px;
+	padding-bottom: 25px;
+}
+#links div ul li { margin-bottom: 11.5px }
+#links div ul li a{
+	color: #6a6d89;
+	font-family: "WorkSans-Regular";
+	font-size: 14px;
+	line-height: 27px;
+}
+
+#get-in-touch {
+	margin-top: 78px;	
+	text-align: center;
+}
+#get-in-touch h2 {
+	font-family: "WorkSans-SemiBold";
+	font-size: 30px;
+	line-height: 60px;
+	color: #233148;
+	padding-bottom: 5px;
+}
+#get-in-touch p {
+	font-family: "WorkSans-Regular";
+	font-size: 14px;
+	line-height: 27px;
+	color: #6a6d89;
+}
+#get-in-touch form {
+	padding-top: 66px;
+	padding-bottom: 86px;
+}
+#get-in-touch form input {
+	height: 50px;
+	width: 572px;
+	outline: none;
+	background-color: #f6f7fb;
+	border: none;
+	padding: 0px 20px;
+	margin-right: 30px;
+}
+#get-in-touch form button {
+	background-color: #33d2fd;
+	color: #233148;
+	text-transform: uppercase;
+	font-size: 14px;
+	font-family: "WorkSans-SemiBold";
+	line-height: 50px;
+	border: none;
+	height: 50px;
+	padding: 0 31px;
+}
+footer {
+ 	height: 100px;
+ 	background-color: #233148;
+}
+footer .container {
+	display: flex;
+	justify-content: space-between;
+}
+footer .container p {
+	color: white;
+	font-family: "WorkSans-Regular";
+	font-size: 14px;
+	line-height: 100px;
+}
+footer .container ul li {
+	display: inline-block;
+	margin-top: 34px;
+	margin-left: 50px;
 }
