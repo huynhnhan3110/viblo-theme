@@ -158,7 +158,7 @@ a {
 	text-align: center;
 }
 /*	stable */
-#stable {1`
+#stable {
 	padding-top: 84px;
 	display: flex;
 	justify-content: space-between;
@@ -437,4 +437,86 @@ footer .container ul li {
 	display: inline-block;
 	margin-top: 34px;
 	margin-left: 50px;
+}
+/* responsive */
+/* tren 1200px thi code o tren da giai quyet roi */
+/* from 960 to 1200 */
+@media screen and (max-width: 1200px) {
+	.container {
+		padding-left: 15px;
+		padding-right: 15px;
+	}	
+	/** feature **/
+	#features .container {
+		display: flex;
+	}
+	#features #phone-image, #features #feature-list {
+		width: 50%;
+	}
+	#features .container #feature-list {
+		padding-top: 169px;
+	}
+	#feature-list > div {
+		position: static;
+		width: 100%;
+		height: auto;
+		padding: 30px 30px 20	px 30px;
+		margin-bottom: 20px;
+	}
+	#feature-list > div > img {
+		float: left;
+	}
+	#feature-list > div > h3 {
+		margin-top: 0;
+		text-align: left;
+		margin-left: 70px;
+	}
+	#feature-list > div > p {
+		text-align: left;
+		margin-left: 70px;
+	}
+	/** stable **/
+	#stable {
+		display: flex;
+	}
+	#stable > div {
+		padding-right: 30px;
+	}
+	#stable > ul {
+		padding-left: 30px;
+	}
+	#stable > div > p {
+		margin-left: 10px;
+	}
+	/** everything **/
+	#everything .everything__content {
+		padding-left: 30px;
+	}
+	/** available **/
+	#available .available__phone {
+		padding-right: 30px;
+	}
+	#available .available__content {
+		margin-right: 76px;
+	}
+	footer .container {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+}
+
+/* from 768 to 960 */
+@media screen and (max-width: 960px) {
+	header ul li a{
+		color: yellow!important;
+	}
+}
+
+/* from 500 to 768 */
+@media screen and (max-width: 768px) {
+	
+}
+
+@media screen and (max-width: 500px) {
+
 }
